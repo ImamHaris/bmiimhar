@@ -7,6 +7,10 @@ class BmiResultScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Hasil Hitung BMI"),
+      ),
+    );
   }
 }

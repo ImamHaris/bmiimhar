@@ -1,3 +1,4 @@
+import 'package:bmiimhar/bmi_result_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -29,10 +30,19 @@ class _BmiDataScreenState extends State<BmiDataScreen> {
             child: Container(
           color: Colors.green,
         )),
-        Container(
-          height: 60,
-          color: Colors.blue,
-          child: Center(child: Text("Hitung BMI")),
+        GestureDetector(
+          onTap: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(builder: (context) {
+                return BmiResultScreen();
+              }),
+            );
+          },
+          child: Container(
+            height: 60,
+            color: Colors.blue,
+            child: Center(child: Text("Hitung BMI")),
+          ),
         )
       ]),
     );
