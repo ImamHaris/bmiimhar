@@ -14,6 +14,8 @@ class BmiDataScreen extends StatefulWidget {
 }
 
 class _BmiDataScreenState extends State<BmiDataScreen> {
+  int height = 100;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,14 +53,18 @@ class _BmiDataScreenState extends State<BmiDataScreen> {
                 children: [
                   Text(
                     "Tinggi Badan",
-                    style: labelTextStyle,
+                    style: labelTextStyle.copyWith(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
+                  SizedBox(height: 12),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Text(
-                        "182",
+                        "$height",
                         style: TextStyle(
                           fontSize: 50,
                           fontWeight: FontWeight.bold,
@@ -72,10 +78,16 @@ class _BmiDataScreenState extends State<BmiDataScreen> {
                     ],
                   ),
                   Slider(
-                    value: 100,
+                    value: height.toDouble(),
                     min: 80,
                     max: 200,
-                    onChanged: (value) {},
+                    thumbColor: Colors.red,
+                    activeColor: Colors.white,
+                    inactiveColor: Colors.white54,
+                    onChanged: (value) {
+                      height = value.toInt();
+                      setState(() {});
+                    },
                   )
                 ],
               ),
