@@ -55,6 +55,7 @@ class _BmiDataScreenState extends State<BmiDataScreen> {
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Text(
                         "182",
@@ -79,7 +80,6 @@ class _BmiDataScreenState extends State<BmiDataScreen> {
                 ],
               ),
             ),
-            color: Colors.yellow,
           ),
         ),
         Expanded(
