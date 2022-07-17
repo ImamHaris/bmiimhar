@@ -79,24 +79,20 @@ class BmiResultScreen extends StatelessWidget {
     final bmiDesc = getHealthRiskDescription(bmiCategory);
     return Scaffold(
       appBar: AppBar(
-        title: Center(
+        title: const Center(
           child: Text("Hasil Hitung BMI"),
         ),
       ),
       body: Column(
         children: [
-          Expanded(
-            child: Container(
-              child: Container(
-                child: Center(
-                  child: Text(
-                    "Hasil Perhitungan",
-                    style: TextStyle(
-                      fontSize: 40,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                    ),
-                  ),
+          const Expanded(
+            child: Center(
+              child: Text(
+                "Hasil Perhitungan",
+                style: TextStyle(
+                  fontSize: 40,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
                 ),
               ),
             ),
@@ -112,15 +108,15 @@ class BmiResultScreen extends StatelessWidget {
                   children: [
                     Text(
                       bmiCategory,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
                       ),
                     ),
                     Text(
-                      "${bmi.toStringAsFixed(1)}",
-                      style: TextStyle(
+                      bmi.toStringAsFixed(1),
+                      style: const TextStyle(
                         fontSize: 100,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
@@ -129,7 +125,7 @@ class BmiResultScreen extends StatelessWidget {
                     Text(
                       bmiDesc,
                       textAlign: TextAlign.center,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 15,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
@@ -146,8 +142,8 @@ class BmiResultScreen extends StatelessWidget {
             },
             child: Container(
               height: 80,
-              color: Color(0xffEC3C66),
-              child: Center(
+              color: const Color(0xffEC3C66),
+              child: const Center(
                 child: Text(
                   "Hitung Ulang BMI",
                   style: TextStyle(
