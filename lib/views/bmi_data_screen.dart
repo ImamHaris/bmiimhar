@@ -61,6 +61,7 @@ class _BmiDataScreenState extends State<BmiDataScreen> {
                         style: TextStyle(
                           fontSize: 50,
                           fontWeight: FontWeight.bold,
+                          color: Colors.white,
                         ),
                       ),
                       Text(
