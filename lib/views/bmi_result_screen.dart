@@ -53,20 +53,20 @@ class BmiResultScreen extends StatelessWidget {
       case underWeightServe:
       case underWeightModerate:
       case underWeightMild:
-        desc = "Possible nutritional deficiency and osteoporosis.";
+        desc = "Kemungkinan kekurangan nutrisi dan osteoporosis.";
         break;
       case normal:
-        desc = "Low risk (healthy range).";
+        desc = "Risiko rendah (kisaran sehat).";
         break;
       case overWeight:
         desc =
-            "Moderate risk of developing heart disease, high blood pressure, stroke, diabetes mellitus.";
+            "Risiko sedang terkena penyakit jantung, tekanan darah tinggi, stroke, diabetes mellitus.";
         break;
       case obeseI:
       case obeseII:
       case obeseIII:
         desc =
-            "High risk of developing heart disease, high blood pressure, stroke, diabetes mellitus.";
+            "Risiko tinggi terkena penyakit jantung, tekanan darah tinggi, stroke, diabetes mellitus.";
         break;
       default:
     }
