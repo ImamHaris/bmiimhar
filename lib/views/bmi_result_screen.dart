@@ -9,19 +9,36 @@ class BmiResultScreen extends StatelessWidget {
 
   determineBmiCategory(double bmiValue) {
     String category = "";
+    // if (bmiValue < 16.0) {
+    //   category = underWeightServe;
+    // } else if (bmiValue >= 16.0 && bmiValue < 17) {
+    //   category = underWeightModerate;
+    // } else if (bmiValue >= 17.0 && bmiValue < 18.5) {
+    //   category = underWeightMild;
+    // } else if (bmiValue >= 18.0 && bmiValue < 25.0) {
+    //   category = normal;
+    // } else if (bmiValue >= 25.0 && bmiValue < 30.0) {
+    //   category = overWeight;
+    // } else if (bmiValue >= 30.0 && bmiValue < 35.0) {
+    //   category = obeseI;
+    // } else if (bmiValue >= 35.0 && bmiValue < 40.0) {
+    //   category = obeseII;
+    // } else if (bmiValue >= 40.0) {
+    //   category = obeseIII;
+    // }
     if (bmiValue < 16.0) {
       category = underWeightServe;
-    } else if (bmiValue >= 16.0 && bmiValue < 17) {
+    } else if (bmiValue < 17) {
       category = underWeightModerate;
-    } else if (bmiValue >= 17.0 && bmiValue < 18.5) {
+    } else if (bmiValue < 18.5) {
       category = underWeightMild;
-    } else if (bmiValue >= 18.0 && bmiValue < 25.0) {
+    } else if (bmiValue < 25.0) {
       category = normal;
-    } else if (bmiValue >= 25.0 && bmiValue < 30.0) {
+    } else if (bmiValue < 30.0) {
       category = overWeight;
-    } else if (bmiValue >= 30.0 && bmiValue < 35.0) {
+    } else if (bmiValue < 35.0) {
       category = obeseI;
-    } else if (bmiValue >= 35.0 && bmiValue < 40.0) {
+    } else if (bmiValue < 40.0) {
       category = obeseII;
     } else if (bmiValue >= 40.0) {
       category = obeseIII;
